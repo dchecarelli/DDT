@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Ddt : Se implementará un sistema adoptando la metodología ágil DDT">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ddt</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/dchecarelli/DDT">View on GitHub</a>
+
+          <h1 id="project_title">Ddt</h1>
+          <h2 id="project_tagline">Se implementará un sistema adoptando la metodología ágil DDT</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/dchecarelli/DDT/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/dchecarelli/DDT/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>package proyectoparajunit;
+import java.util.<em>;
+/*</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/author" class="user-mention">@author</a> Diego</li>
+<li>
+<a href="https://github.com/see" class="user-mention">@see</a>: aqui hay q poner la direccion del github Clase con métodos de utilidad</li>
+<li>
+<p>sobre Arrays de cadenas de caracteres
+*/
+public class ProyectoparaJunit {</p>
+
+<p>// Atributos de la clase
+private java.util.Vector elements;
+//Constructor 
+ public ProyectoparaJunit(String[] data) {
+    // Verificamos que la lista tenga valores
+    if ((data == null) || (data.length == 0)) {
+        throw new IllegalArgumentException();
+    }</p>
+
+<pre><code>this.elements = new Vector&lt;String&gt;();
+for (String element : data) {
+    elements.addElement(element);
+}
+</code></pre>
+
+<p>}</p>
+
+<p>/**</p>
+
+<ul>
+<li>
+<p><a href="https://github.com/return" class="user-mention">@return</a> Devuelve la cadena que tiene más caracteres
+*/
+public String getMaxLength() {
+String max = "";</p>
+
+<p>for (String element : elements) {
+    if (element.length() &gt; max.length()) {
+        max = element;
+    }
+}</p>
+
+<p>return max;
+}</p>
+</li>
+</ul>
+<p>/**</p>
+
+<ul>
+<li>
+<p><a href="https://github.com/return" class="user-mention">@return</a> Devuelve la suma de la longitud de todas las cadenas
+*/
+public int getTotalLength() {
+int total = 0;</p>
+
+<p>for (String d : elements) {
+    total += d.length();
+}</p>
+
+<p>return total;
+}</p>
+</li>
+</ul>
+<p>/**</p>
+
+<ul>
+<li>
+<a href="https://github.com/param" class="user-mention">@param</a> searched Cadena buscada</li>
+<li>
+<a href="https://github.com/return" class="user-mention">@return</a> Devuelve la posición de un elemento dentro del array</li>
+<li>
+<a href="https://github.com/throws" class="user-mention">@throws</a> java.util.NoSuchElementException Si el elemento no existe en la</li>
+<li>
+<p>lista
+*/
+public int getIndexOf(String searched) throws java.util.NoSuchElementException {
+int pos = 0;</p>
+
+<p>// Comprobamos que el argumento sea válido
+if (searched == null) {
+    throw new IllegalArgumentException();
+}</p>
+
+<p>// Recorremos la información hasta encontrar el elemento
+for (String d : elements) {
+    if (d.equals(searched)) {
+        return pos;
+    }
+    pos++;
+}</p>
+
+<p>// El elemento no existia, lanzamos la excepción
+throw new java.util.NoSuchElementException(searched);
+}
+}</p>
+</li>
+</ul>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Ddt maintained by <a href="https://github.com/dchecarelli">dchecarelli</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
